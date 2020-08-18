@@ -52,7 +52,7 @@ const AccordionSummaryStyles = props => {
 const AccordionDetailsStyle = props =>
   withStyles(theme => ({
     root: {
-      padding: theme.spacing(2),
+
       backgroundColor: props.backgroundColor,
       color: props.color
     }
@@ -83,7 +83,7 @@ export default function(props) {
       contentArrowStyle={{borderRight: "7px solid " + props.backgroundColor}}
       className="vertical-timeline-element--work"
       iconStyle={props.iconStyle}
-      date={props.date}
+      date={<div style={{paddingLeft: "16px"}}> {props.date}</div>}
       icon={
         <img
           src={require("./../images/" + props.image + ".png")}
@@ -93,7 +93,7 @@ export default function(props) {
     >
       <Accordion>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon style={{color: props.color}} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
@@ -107,7 +107,17 @@ export default function(props) {
           </h3>
           <br />
         </AccordionSummary>
-        <AccordionDetails>{props.details}</AccordionDetails>
+        <AccordionDetails>
+          <ul style = {{paddingInlineStart:'16px'}}>
+            {props.details.map(paragraph => (
+              <>
+                <li>{paragraph}</li>
+
+                <br />
+              </>
+            ))}
+          </ul>
+        </AccordionDetails>
       </Accordion>
     </VerticalTimelineElement>
   );

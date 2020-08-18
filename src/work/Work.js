@@ -25,11 +25,9 @@ export default function (props) {
           <WorkComponent
             company="BiNDS Lab"
             title="Incoming Research Assistant"
-            details="
-              I am going to be researching parallel computing in relation with
-              Machine Learning on FPGAs under the mentorship of my professor, Ed
-              Reitman.
-            "
+            details={[
+              "I am going to be researching parallel computing in relation with Machine Learning on FPGAs under the mentorship of my professor, Ed Reitman.",
+            ]}
             backgroundColor="white"
             color="black"
             iconStyle={{ background: "white", color: "#fff" }}
@@ -39,7 +37,7 @@ export default function (props) {
           <WorkComponent
             company="The Girl Code"
             title="Fullstack Developer Intern"
-            details="In Progress..."
+            details={["In Progress..."]}
             backgroundColor="rgb(33, 150, 243)"
             color="white"
             iconStyle={{ background: "#ec008c", color: "#fff" }}
@@ -49,14 +47,13 @@ export default function (props) {
           <WorkComponent
             company="Tech For Good Inc"
             title="ML and Software Engineer Intern"
-            details="I worked within a group of 6 to build a lifesaving firearm
-          detection system that uses a deep learning object segmentation and
-          detection network.
-          I tested and trained various convolution-based
-          classification and segmentation networks including FasterRCNN,
-          RetinaNet, Yolo v4 in PyTorch, and TensorFlow on a VM on Azure to
-          determine the best model for the company's use case. I also
-          labeled 10k pictures of the dataset using labelimg."
+            details={[
+              "I worked within a group of 6 to build a\
+              lifesaving firearm detection system that uses\
+              a deep learning object segmentation and detectionnetwork.",
+              
+
+            ]}
             backgroundColor="white"
             color="black"
             iconStyle={{ background: "white", color: "#fff" }}
@@ -66,15 +63,17 @@ export default function (props) {
           <WorkComponent
             company="Dr Manesh Kumar's Clinic"
             title="Consulting Software Engineer"
-            details="I developed a full-stack multi-level-auth website with React,
-          MongoDB, Express, and NodeJS where I implemented an appointment
-          system from scratch, added features including appointment booking,
-          scheduling medicine delivery at the customer level and customer
-          management at admin level. <br />
-          <br />I also built a Tkinter and Pandas based desktop app in Python
-          which digitized the administrative and clinical operations, thereby
-          reducing the patient lead time by 12.5% and hence increasing profits
-          margin by 8%"
+            details={[
+              "I developed a full-stack multi-level-auth website with \
+              React, MongoDB, Express, and NodeJS where I implemented \
+              an appointment system from scratch, added features including \
+              appointment booking, scheduling medicine delivery at the customer \
+              level and customer management at admin level.",
+              "I also built a Tkinter and Pandas based desktop app in Python \
+              which digitized the administrative and clinical operations, thereby \
+              reducing the patient lead time by 12.5% and hence increasing profits \
+              margin by 8%",
+            ]}
             backgroundColor="rgb(33, 150, 243)"
             color="white"
             iconStyle={{ background: "white", color: "#fff" }}
