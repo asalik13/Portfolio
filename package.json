@@ -11,7 +11,6 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "css-loader": "^4.2.1",
-    "deviceful": "^0.9.1",
     "muuri": "^0.9.3",
     "muuri-react": "^3.1.6",
     "react": "^16.13.1",
