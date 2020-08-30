@@ -12,6 +12,7 @@ let styles = {
     fontSize: "70px",
     textAlign: "center",
     width: "100%",
+    fontFamily: "Times New Roman",
   },
   container: {
     position: "relative",
@@ -22,6 +23,7 @@ let styles = {
   },
   info: {
     fontSize: "50px",
+    fontFamily: "Times New Roman",
   },
 };
 
