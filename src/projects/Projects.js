@@ -14,7 +14,7 @@ export default function Layout(props) {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    marginTop: "60px",
+    paddinTop: "60px",
   };
 
   return (

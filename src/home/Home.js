@@ -15,13 +15,18 @@ let styles = {
     width: "100%",
     fontFamily: "Times New Roman",
     transition: 0,
+    paddingTop: "120px",
+
+
   },
   container: {
     position: "relative",
-    height: "700px",
+    height: "750px",
+
   },
   image: {
     borderRadius: "50%",
+
   },
   info: {
     fontSize: "5vw",
