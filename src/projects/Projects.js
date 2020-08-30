@@ -1,29 +1,29 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
 
 export default function Layout(props) {
   const imageStyle = {
     objectFit: "contain",
     width: "100%",
-    height: "70%"
+    height: "70%",
   };
   let numberOfFeeds = 5;
   let keys = Array.from(Array(numberOfFeeds).keys());
-  let feeds = keys.map(key => <Card key={key} />);
+  let feeds = keys.map((key) => <Card key={key} />);
   let layoutStyle = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    paddingTop: "60px"
+    marginTop: "60px",
   };
 
   return (
-    <center style={{paddingTop: "80px"}}>
+    <center style={{ paddingTop: "80px" }}>
       <span
         style={{
           fontSize: "40px",
           color: "white",
-          fontWeight: "bold"
+          fontWeight: "bold",
         }}
       >
         My Projects

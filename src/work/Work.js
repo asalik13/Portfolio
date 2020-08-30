@@ -21,10 +21,10 @@ export default function (props) {
         My Experiences
       </span>
       <div style={{ paddingTop: "20px", textAlign: "left" }}>
-        <VerticalTimeline>
+        <VerticalTimeline animate = {false}>
           <WorkComponent
             company="BiNDS Lab"
-            title="Incoming Research Assistant"
+            title="Research Assistant"
             details={[
               "Researching parallel computing in relation to biologically inspired neural networks under the mentorship of Prof. Ed Rietman.",
             ]}

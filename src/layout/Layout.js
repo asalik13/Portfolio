@@ -14,24 +14,22 @@ import {
 
 function Navbar(props) {
   let navbarStyle = {
-    position: "relative",
     maxWidth: "100%",
     height: "40px",
     lineHeight: "40px",
-    backgroundColor: "white",
-    position: "-webkit-sticky",
     position: "sticky",
     top: 0,
     padding: "1%",
     zIndex: 100,
-    backgroundColor: "#fff",
-    borderBottom: "3px solid gray",
+    color: "white",
+    backgroundColor: "black",
+    borderBottom: "1px solid gray",
   };
 
   let linksStyle = {
     float: "right",
     marginRight: "3%",
-    color: "black",
+    color: "white",
     borderRadius: "10px",
     padding: "0 1% 0 1%",
     cursor: "pointer",
