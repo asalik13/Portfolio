@@ -1,5 +1,5 @@
 import React from "react";
-import {Pagination} from "react-bootstrap";
+import { Pagination } from "react-bootstrap";
 import ReactPageScroller from "react-page-scroller";
 import Particles from "../components/Particle";
 import Home from "../home/Home";
@@ -9,7 +9,7 @@ import {
   ScrollingProvider,
   SectionLink,
   SectionLinks,
-  Section
+  Section,
 } from "react-scroll-section";
 
 function Navbar(props) {
@@ -25,7 +25,7 @@ function Navbar(props) {
     padding: "1%",
     zIndex: 100,
     backgroundColor: "#fff",
-    borderBottom: "3px solid gray"
+    borderBottom: "3px solid gray",
   };
 
   let linksStyle = {
@@ -34,34 +34,36 @@ function Navbar(props) {
     color: "black",
     borderRadius: "10px",
     padding: "0 1% 0 1%",
-    cursor: "pointer"
+    cursor: "pointer",
   };
 
   let welcomeStyle = {
     float: "left",
-    marginLeft: "5%"
+    marginLeft: "5%",
   };
   return (
     <div style={navbarStyle}>
       <SectionLinks>
-        {({allLinks}) =>
-          Object.entries(allLinks).reverse().map(([key, link]) => (
-            <span
-              style={linksStyle}
-              key={key}
-              onClick={link.onClick}
-              selected={link.isSelected}
-            >
-              {key}
-            </span>
-          ))
+        {({ allLinks }) =>
+          Object.entries(allLinks)
+            .reverse()
+            .map(([key, link]) => (
+              <span
+                style={linksStyle}
+                key={key}
+                onClick={link.onClick}
+                selected={link.isSelected}
+              >
+                {key}
+              </span>
+            ))
         }
       </SectionLinks>
     </div>
   );
 }
 
-let allLinks = {Work: "#work", Projects: "#projects"};
+let allLinks = { Work: "#work", Projects: "#projects", Home: "#home" };
 
 const App = () => (
   <div>
@@ -69,6 +71,9 @@ const App = () => (
       <Navbar />
 
       <Particles />
+      <Section id="Home">
+        <Home />
+      </Section>
       <Section id="Work">
         <Work />
       </Section>

@@ -21,6 +21,7 @@
     "react-scripts": "3.4.1",
     "react-scroll": "^1.8.1",
     "react-scroll-section": "^2.1.0",
+    "react-typist": "^2.0.5",
     "react-vertical-timeline-component": "^3.0.2",
     "style-loader": "^1.2.1",
     "web-animations-js": "^2.3.2"

@@ -26,7 +26,7 @@ export default function (props) {
             company="BiNDS Lab"
             title="Incoming Research Assistant"
             details={[
-              "I am going to be researching parallel computing in relation with Machine Learning on FPGAs under the mentorship of my professor, Ed Reitman.",
+              "Researching parallel computing in relation to biologically inspired neural networks under the mentorship of Prof. Ed Rietman.",
             ]}
             backgroundColor="white"
             color="black"
@@ -48,11 +48,9 @@ export default function (props) {
             company="Tech For Good Inc"
             title="ML and Software Engineer Intern"
             details={[
-              "I worked within a group of 6 to build a\
-              lifesaving firearm detection system that uses\
-              a deep learning object segmentation and detectionnetwork.",
-              
-
+              "Built a lifesaving firearm detection system for public buildings, within a group of 6 in an Agile environment to combat increasing occurrences of public shootings.",
+              "Built an intranet-based web and desktop app with React, Electron, and Flask with pipelines for live video from security cameras, and deployed model using TensorFlow.",
+              "Trained multiple convolution-based classification and segmentation networks including RetinaNet, Yolo v4 on Azure, and determined the best model for the company's use case",
             ]}
             backgroundColor="white"
             color="black"
@@ -64,15 +62,9 @@ export default function (props) {
             company="Dr Manesh Kumar's Clinic"
             title="Consulting Software Engineer"
             details={[
-              "I developed a full-stack multi-level-auth website with \
-              React, MongoDB, Express, and NodeJS where I implemented \
-              an appointment system from scratch, added features including \
-              appointment booking, scheduling medicine delivery at the customer \
-              level and customer management at admin level.",
-              "I also built a Tkinter and Pandas based desktop app in Python \
-              which digitized the administrative and clinical operations, thereby \
-              reducing the patient lead time by 12.5% and hence increasing profits \
-              margin by 8%",
+              "Developed full stack multi-level-auth website with React, MongoDB, Express and NodeJS to serve as the main website for the clinic and over 30,000 patients.",
+              "Implemented appointment system from scratch, added features including appointment booking, scheduling product delivery and customer management.",
+              "Digitised the administrative and financial operations by integrating payment hooks, Google Calendar and Zoom, thereby reducing the patient waiting time by 50%.",
             ]}
             backgroundColor="rgb(33, 150, 243)"
             color="white"
